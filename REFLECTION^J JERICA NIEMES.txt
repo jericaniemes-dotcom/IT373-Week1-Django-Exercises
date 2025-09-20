@@ -1,0 +1,8 @@
+REFLECTION
+Setting up this Django project came with a few challenges, particularly around environment setup and template organization. The first issue I encountered was activating the virtual environment on PowerShell, which threw an execution policy error. I resolved it by temporarily changing the execution policy to "Bypass" for the session using `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`.
+
+Another minor challenge was structuring the URLs and linking them properly using Django's `path()` and `url` template tags. I had to double-check that the app was added to `INSTALLED_APPS` and that `urlpatterns` were correctly nested. Debugging template inheritance was also a learning point—making sure all template files were in the correct folders and paths were accurate.
+
+Adding the JavaScript "Read more / Show less" toggle on the detail view was straightforward, but I had to ensure content rendering didn’t conflict with truncated text in the template. Once everything worked, I committed all changes and set up the Git remote to push to GitHub.
+
+Overall, this was a good exercise in full-stack awareness, from backend setup to frontend interactivity.
