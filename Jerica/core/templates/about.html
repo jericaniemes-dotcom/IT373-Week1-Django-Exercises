@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+  <hr>
+  <h2 style="text-align: center; color: #2c3e50;">About Me</h2>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <p style="font-size: 1.1em; font-weight: bold;">Name:</p>
+    <p>{{ name }}</p>
+
+    <p style="font-size: 1.1em; font-weight: bold;">Student ID:</p>
+    <p>{{ student_id }}</p>
+  </div>
+  <hr>
+{% endblock %}
